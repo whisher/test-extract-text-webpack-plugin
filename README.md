@@ -1,3 +1,3 @@
 # test-extract-text-webpack-plugin
-To test a extract-text-webpack-plugin errot
-Module build failed: Error: Didn't get a result from child compiler
+* To test an extract-text-webpack-plugin error
+* Module build failed: Error: Didn't get a result from child compiler
