@@ -1,0 +1,8 @@
+{
+  parser: "babel-eslint",
+  extends: "angular",
+  "rules": {
+    'angular/no-service-method': 0,
+    'angular/log': 0
+  }
+}

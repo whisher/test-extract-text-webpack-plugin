@@ -1,0 +1,66 @@
+.placeholder() {
+  ::-webkit-input-placeholder {
+    color: @gray-light !important;
+    text-transform: uppercase;
+  }
+  :-moz-placeholder {
+    color: @gray-light !important;
+    text-transform: uppercase;
+    opacity:  1;
+  }
+  ::-moz-placeholder {
+    color: @gray-light !important;
+    text-transform: uppercase;
+    opacity:  1;
+  }
+  :-ms-input-placeholder {
+    color: @gray-light !important;
+    text-transform: uppercase;
+  }
+}
+.btn-variant(@color; @background; @border) {
+  color: @color !important;
+  background-color: @background !important;
+  border-color: @border !important;
+
+  &:focus{
+    color: @color !important;
+    background-color: @background !important;
+    border-color: darken(@border, 12%) !important;
+  }
+  &:hover {
+    color: @color !important;
+    background-color: @background !important;
+    border-color: darken(@border, 12%) !important;
+  }
+  &:active{
+    color: @color !important;
+    background-color: @background !important;
+    border-color: darken(@border, 12%) !important;
+  }
+  &[disabled]{
+    &:hover,
+    &:focus {
+      background-color: @background !important;
+      border-color: @border !important;
+    }
+  }
+}
+.modal-header() {
+  position: relative;
+  background-color: @orange;
+  padding: 2rem 0;
+  margin: 0;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: @font-app-size-h1;
+  i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: @font-app-size-xlarge;
+    cursor: pointer;
+  }
+}
